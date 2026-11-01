@@ -1,24 +1,16 @@
 /* The nav owns this motion: scrolling changes one interpolated progress value.
    Interrupting a transition resumes from the current shape rather than restarting. */
 @property --hx-progress {syntax:"<number>"; inherits:true; initial-value:0}
-.nav-brand {display:block; width:125px; height:35px; flex:none}
-.nav-brand .helix-motion {--helix-ink:var(--ink); width:100%; height:100%; aspect-ratio:auto; --hx-progress:0; transition:--hx-progress .65s cubic-bezier(.22,1.12,.36,1)}
+.nav-brand {display:block; width:157px; height:35px; flex:none}
+.nav-brand .helix-motion {--helix-ink:var(--ink); width:100%; height:100%; aspect-ratio:auto; --hx-progress:0; animation:none; transition:--hx-progress .65s cubic-bezier(.22,1.12,.36,1)}
 .header.is-scrolled .nav-brand .helix-motion {--hx-progress:1}
 .nav-brand .helix-motion * {animation:none !important}
 .nav-brand .helix-motion__letters {inset:0; width:100%; height:100%; transform:none}
-.nav-brand .helix-motion__h {transform:translateX(calc(35.123967% * var(--hx-progress)))}
-.nav-brand .helix-motion__x {transform:translateX(calc(77.410468% - 42.286501% * var(--hx-progress)))}
-.nav-brand .helix-motion__middle {transform:scaleX(max(.001, calc(1 - var(--hx-progress)))); opacity:clamp(0, calc(1 - 2.857143 * var(--hx-progress)), 1)}
-.nav-brand .helix-motion__cross {opacity:clamp(0, calc(1 - 2.857143 * var(--hx-progress)), 1)}
-.nav-brand .helix-motion__bridge {clip-path:polygon(calc(18.518519% + 0.000000% * var(--hx-progress)) calc(39.500000% + 0.000000% * var(--hx-progress)),calc(47.685185% + 0.328704% * var(--hx-progress)) calc(39.500000% + 0.000000% * var(--hx-progress)),calc(47.685185% + 9.856481% * var(--hx-progress)) calc(60.500000% + 0.000000% * var(--hx-progress)),calc(18.518519% + 0.000000% * var(--hx-progress)) calc(60.500000% + 0.000000% * var(--hx-progress)))}
-.nav-brand .helix-motion__diagonal {clip-path:polygon(calc(47.685185% + -12.037037% * var(--hx-progress)) calc(0.000000% + 0.000000% * var(--hx-progress)),calc(66.203704% + -10.185185% * var(--hx-progress)) calc(0.000000% + 0.000000% * var(--hx-progress)),calc(66.203704% + 35.185185% * var(--hx-progress)) calc(100.000000% + 0.000000% * var(--hx-progress)),calc(47.685185% + 33.333333% * var(--hx-progress)) calc(100.000000% + 0.000000% * var(--hx-progress)))}
-.nav-brand .helix-motion__upper {clip-path:polygon(calc(59.722222% + 21.296296% * var(--hx-progress)) calc(0.000000% + 0.000000% * var(--hx-progress)),calc(81.018519% + 20.370370% * var(--hx-progress)) calc(0.000000% + 0.000000% * var(--hx-progress)),calc(50.462963% + 31.018519% * var(--hx-progress)) calc(50.000000% + -6.122449% * var(--hx-progress)),calc(29.166667% + 42.129630% * var(--hx-progress)) calc(50.000000% + -28.571429% * var(--hx-progress)))}
-.nav-brand .helix-motion__lower {clip-path:polygon(calc(50.462963% + 15.277778% * var(--hx-progress)) calc(50.000000% + 28.571429% * var(--hx-progress)),calc(19.907407% + 36.111111% * var(--hx-progress)) calc(100.000000% + 0.000000% * var(--hx-progress)),calc(-1.388889% + 37.037037% * var(--hx-progress)) calc(100.000000% + 0.000000% * var(--hx-progress)),calc(29.166667% + 26.388889% * var(--hx-progress)) calc(50.000000% + 6.122449% * var(--hx-progress)))}
 /* Static approved monogram in the hero. Preserve the previous hero's spacing. */
 .hero-symbol {display:grid; place-items:center; width:min(900px,100%); aspect-ratio:2.5/1; margin:-20px auto -18px}
 .hero-symbol img {width:clamp(108px,13vw,155px); height:auto}
 @media(max-width:700px) {
- .nav-brand {width:105px; height:29px}
+ .nav-brand {width:130px; height:29px}
  .hero-symbol {margin:20px auto 24px}
  .hero-symbol img {width:108px}
 }

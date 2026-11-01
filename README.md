@@ -11,6 +11,8 @@ Abrir `index.html` en el navegador. No requiere instalación ni compilación. Lo
 
 Secciones iniciales: presentación, visión y principios. No se añadieron nombres de productos, clientes ni datos de contacto sin confirmar. Sitio publicado en https://helix.edfloreshz.dev/ mediante GitHub Pages.
 
+La identidad usa astas principales de 28 unidades sobre una altura de 100, sin contornos añadidos. Los SVG, iconos y vista previa social están sincronizados con los maestros.
+
 El logo del encabezado utiliza HX y HELIX con la misma altura visible. La animación mantiene una altura constante para ambos estados.
 
 ## Navbar y hero

@@ -76,7 +76,7 @@ def validate():
     require(canonicals == [base], 'Canonical URL must match CNAME')
     require(value('og:url') == base, 'og:url must match CNAME')
     require(value('og:type') == 'website', 'Expected website Open Graph type')
-    image_url = base + 'assets/social-preview.png?v=hx-only'
+    image_url = base + 'assets/social-preview.png?v=bold'
     for key in ('og:image', 'og:image:secure_url', 'twitter:image'):
         require(value(key) == image_url, f'{key} must use the absolute preview URL')
     require(value('og:image:type') == 'image/png', 'Preview MIME type must be image/png')
